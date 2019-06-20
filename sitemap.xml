@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://1ali.ir/</loc>
+  <lastmod>2016-08-03T19:26:46+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://1ali.ir/index-fa.html</loc>
+  <lastmod>2016-08-03T13:58:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://1ali.ir/index.html</loc>
+  <lastmod>2016-08-03T19:26:46+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://1ali.ir/about.html</loc>
+  <lastmod>2016-08-03T13:55:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://1ali.ir/papers.html</loc>
+  <lastmod>2016-08-03T13:58:04+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://1ali.ir/current.html</loc>
+  <lastmod>2016-09-09T10:12:54+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://1ali.ir/old.html</loc>
+  <lastmod>2016-08-03T13:57:16+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://1ali.ir/talks.html</loc>
+  <lastmod>2016-08-03T13:59:26+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://1ali.ir/computability-95-1.html</loc>
+  <lastmod>2016-09-09T13:53:26+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://1ali.ir/automata-95-1.html</loc>
+  <lastmod>2016-09-09T13:56:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://1ali.ir/tcs-95-1.html</loc>
+  <lastmod>2016-09-09T13:31:22+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://1ali.ir/about-fa.html</loc>
+  <lastmod>2016-08-03T13:55:32+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://1ali.ir/papers-fa.html</loc>
+  <lastmod>2016-08-03T13:57:36+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://1ali.ir/current-fa.html</loc>
+  <lastmod>2016-09-09T10:43:22+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://1ali.ir/old-fa.html</loc>
+  <lastmod>2016-08-03T13:56:54+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://1ali.ir/talks-fa.html</loc>
+  <lastmod>2016-08-03T13:59:08+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+</urlset>
