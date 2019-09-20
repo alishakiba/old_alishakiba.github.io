@@ -21,6 +21,34 @@
 	<link rel="stylesheet" href="assets/css/academicons.min.css">
 
 	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+	
+	<link rel="stylesheet" href="pubstyle.css" type="text/css">
+    
+    <!-- Hide interactive elements for users who have JavaScript disabled -->
+    <noscript>
+      <style type="text/css">
+        button.abstract-toggle, button.bibtex-toggle { display: none; }
+        h3.abstract-toggle { cursor: auto; }
+      </style>
+    </noscript>
+    
+    <!-- jQuery framework: necessary for all included JavaScript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" defer></script>
+    
+    <!-- Main JavaScript file -->
+    <script src="base.js" defer></script>
+    
+    <!-- Include MathJax to convert LaTeX formulas to HTML on the fly -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']],
+          processEscapes: true
+        },
+        "HTML-CSS": { scale: 90 }
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" async></script>
 </head>
 <body class="home">
 
@@ -39,48 +67,14 @@
 				<a class="fa fa-github-square fa-3x" href="https://github.com/alishakiba"></a> 
 				<a class="fa fa-stack-exchange fa-3x" href="http://stackexchange.com/users/1983831/ali-shakiba?tab=top"></a> 
 				<a class="fa fa-video-camera fa-3x" href="http://takhtesefid.org/user/alics#page=1;sort=time;order=-1"></a> 
+				<!-- <a href="http://alishakiba.blog.ir">My Blog (in <img src="assets/images/iran.png" />)</a> -->
 			</span>
 		</h1>
+		<!-- 
         <h5 class="text-center" style="font-family: BBCNassim;">
         	Language/زبان: <a href="index-fa.html"><img src="assets/images/iran.png" alt="فارسی" /></a> | <a href="index.html"><img src="assets/images/uk.gif" alt="English" /></a>
-        </h5>
+        </h5> -->
 	</div>
-
-	<nav class="navbar navbar-default navbar-sticky">
-		<div class="container-fluid">
-			
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-			</div>
-			
-			<div class="navbar-collapse collapse">
-				
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="papers.html">Published Papers</a></li>
-							<li><a href="projects.html">Projects</a></li>
-							<li><a href="books.html">Books</a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Teaching <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="current.html">Current Courses</a></li>
-							<li><a href="old.html">Past Courses</a></li>
-							<li><a href="talks.html">Talks & Workshops</a></li>
-						</ul>
-					</li>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a href="http://alishakiba.blog.ir">My Blog (in <img src="assets/images/iran.png" />)</a></li>
-				</ul>
-			
-			</div><!--/.nav-collapse -->			
-		</div>	
-	</nav>
 </header>
 
 <main id="main">
@@ -95,43 +89,615 @@
 			</div>
 		</div> <!-- / section -->
 		
-		<div class="row section featured topspace">
-			<h2 class="section-title"><span>Current Courses</span></h2>
-			<div class="row">
-				<div class="col-sm-4 col-md-4">
-					<h3 class="text-center">Theory of Computation - BSc</h3>
-					<p>This is a second course in computability theory for CS undergraduates. At first, we start our discussion with Turing machines and study (un)decidability in terms of TMs. Then, we continue our study with theory of recursion and give a taste of Church-Turing thesis. Finally, we discuss some basic results in complexity theory, especially topics in NP- and PASPACE-completeness. <a href="computability-theory-96-1.html" class="btn btn-action">Read More</a></p>
-				</div>
-				<div class="col-sm-4 col-md-4">
-					<h3 class="text-center">Fundamentals of Secure Computing - BSc</h3>
-					<p>This is the first, and the only, exposure of CE undergraduates to the topic of cybersecurity. In this course, we start by discussing how to design and evaluate secure systems with a human centeric ficus. Then, we explore the foundations of software security by considering some of the most important software vulnerabilities, attacks and defences. Next, we will discuss the foundations of modern cryptography from a practical perspective. Finally, the course is concluded by a brief introduction to hardware security and physical attacks to digital systems. <a href="secure-computing-96-1.html" class="btn btn-action">Read more</a></p>
-				</div>
-				<div class="col-sm-4 col-md-4">
-					<h3 class="text-center">Computer Programming for Physics Students - BSc</h3>
-					<p>In this course, we will learn about fundamentals of problem solving with computers in Fortran 95, for students of Physics. <a href="computer1-96-1.html" class="btn btn-action">Read more</a></p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-4 col-md-4">
-					<h3 class="text-center">Theory of Computer Science - MSc</h3>
-					<p>In this course, we will explore some advanced topics in theory of computability and reccursion. We also discuss some foundation topics in theory of complexity. For the second half of the course, we discuss fixed-parameter algorithms. <a href="tcs-96-1.html" class="btn btn-action">Read more</a></p>
-				</div>
-				<div class="col-sm-4 col-md-4">
-					<h3 class="text-center">Network Security - MSc</h3>
-					<p>In this course, we will explore some advanced topics in information, computer and network security. The course starts with the study of cryptographic algorithms including symmetric, asymmetric cryptosystems and hash functions. Then, we will explore the applications of these building blocks in construction of several protocols such as mutual trust, network security and computer security. <a href="network-security-96-1.html" class="btn btn-action">Read more</a></p>
-				</div>
-                <div class="col-sm-4 col-md-4">
-					<h3 class="text-center">Data Mining - MSc</h3>
-					<p>In this course, we will explore data mining techniques including clustering, classification and recommender systems for massive (Big) datasets. We will also study the stream data model and related problems. <a href="data-mining-msc-96-1.html" class="btn btn-action">Read more</a></p>
-				</div>
-			</div>
-            <div class="row">
-            	<div class="col-sm-4 col-md-4">
-					<h3 class="text-center">Advanced Algorithms Design - MSc</h3>
-					<p>In this course, we will review some fundamental techniques in algorithm design, e.g. dynamic programming, divide &amp; conquer, backtrack and greedy algorithms. Then, we will extend our study to approximation schemes, randomized algorithms, fixed-parameter tractability and exact algorithms. The course is mostly based on recent papers. <a href="advanced-algorithms-96-1.html" class="btn btn-action">Read more</a></p>
-				</div>
+		<article class="maincontent" id="edu">
+			<h3 class="section-title"><span>Education</span></h3>
+			<ul class="list-group">
+				<li class="list-group-item">
+					<h4 class="text-primary">PhD in Computer Science</h4>
+					Yazd University, 2012 - 2016
+					<br/>
+					Dissertation: S-approximation and its applications to information processing
+					<br/>
+					Supervisor: <a href="http://www.yazd.ac.ir/hooshmandasl">Prof. M.R. Hooshmandasl</a>
+					<br />
+					Advisors: <a href="http://math.yazd.ac.ir/davvaz/" target="_blank">Prof. B. Davvaz</a> & <a href="http://www.yazd.ac.ir/fazeli" target="_blank">Prof. S. A. Shahzadefazely</a>
+				
+					<h4 class="text-primary">MSc in Computer Science</h4>
+					Yazd University, 2010 - 2012
+					<br/>
+					Thesis: An Overview of Generalized Quantum Turing Machine and Computational Complexity
+					<br/>
+					Supervisor: <a href="http://www.yazd.ac.ir/hooshmandasl">Prof. M.R. Hooshmandasl</a>
+					<br />
+					Advisors: <a href="http://www.yazd.ac.ir/fazeli" target="_blank">Prof. S. A. Shahzadefazely</a>
+				
+					<h4 class="text-primary">BSc in Computer Science</h4>
+					Shahid Bahonar University of Kerman, 2006 - 2010
+					<br/>
+					Project: Classical Information Retrieval Models
+					<br/>
+					Supervisor: <a href="https://www.researchgate.net/profile/Hamid_Sanatnama">Prof. H. Sanatnama</a>
+				</li>
+			</ul>
+		</article>
+	
+    <noscript><p>Some elements on this site, including collapsible abstracts and bibliographic information, require JavaScript. Use a JavaScript-enabled browser for the best experience.</p></noscript>
+	
+    <div id="publicationlist">
+		<div class="alert alert-info">Last modified on 20 September 2019. - I update the list of my publication regularly. However, for a more recent list of my publications, you can refer to 
+					<a class="ai ai-google-scholar-square ai-1x" href="http://scholar.google.com/citations?user=BQ7cb_wAAAAJ&hl=en"> Google Scholar</a>, 
+					<a class="ai ai-researchgate-square ai-1x" href="http://www.researchgate.net/profile/Ali_Shakiba"> ResearchGate</a> or 
+					<a class="ai ai-orcid-square ai-1x" href="http://orcid.org/0000-0002-2253-1166"> ORCiD</a>.
+					My preprints are also available at <a class="ai ai-arxiv-square ai-1x" href="http://arxiv.org/a/shakiba_a_1"> arXiv</a>. If you need any of these papers, please drop me a line and I will mail that to you.</div>
+      <div id="journal" class="section">
+        <h3 class="section-title"><span>Journal papers</span></h3>
+		
+		<ul class="list-group">
+				<li class="list-group-item">
+		
+        <ol class="section-list" start="1">
+          <li id="hooshmandasl2014s" class="bibentry article">
+            <h4 class="title">S-approximation: a new approach to algebraic approximation</h4><br>
+            <span class="author">M. Hooshmandasl</span>, <span class="author">A. Shakiba</span>, <span class="author">A. Goharshady</span>, and <span class="author">A. Karimi</span>.<br>
+            <span class="journal">Journal of Discrete Mathematics</span>, <span class="volume">2014</span>, <span class="date">2014</span>.<br>
+            <button class="bibtex-toggle">BibTeX</button>
+            <div class="bibtex-container">
+              <pre class="bibtex">
+@article{hooshmandasl2014s,
+  author={Hooshmandasl, MR and Shakiba, A and Goharshady, AK and Karimi, A},
+  title={S-approximation: a new approach to algebraic approximation},
+  journal={Journal of Discrete Mathematics},
+  year={2014},
+  volume={2014}
+}
+</pre>
             </div>
+          </li>
+
+          <li id="shakiba2015s" class="bibentry article">
+            <h4 class="title">S-approximation spaces: a three-way decision approach</h4><br>
+            <span class="author">A. Shakiba</span> and <span class="author">M. R. Hooshmandasl</span>.<br>
+            <span class="journal">Fundamenta Informaticae</span>, <span class="volume">139</span><span class="number">(3)</span>:<span class="pages">307&ndash;328</span>, <span class="date">2015</span>.<br>
+            <button class="bibtex-toggle">BibTeX</button>
+            <div class="bibtex-container">
+              <pre class="bibtex">
+@article{shakiba2015s,
+  author={Shakiba, Ali and Hooshmandasl, Mohammad R},
+  title={S-approximation spaces: a three-way decision approach},
+  journal={Fundamenta Informaticae},
+  year={2015},
+  volume={139},
+  number={3},
+  pages={307--328}
+}
+</pre>
+            </div>
+          </li>
+
+          <li id="shakiba2016neighborhood" class="bibentry article">
+            <h4 class="title">Neighborhood system s-approximation spaces and applications</h4><br>
+            <span class="author">A. Shakiba</span> and <span class="author">M. R. Hooshmandasl</span>.<br>
+            <span class="journal">Knowledge and Information Systems</span>, <span class="volume">49</span><span class="number">(2)</span>:<span class="pages">749&ndash;794</span>, <span class="date">2016</span>.<br>
+            <button class="bibtex-toggle">BibTeX</button>
+            <div class="bibtex-container">
+              <pre class="bibtex">
+@article{shakiba2016neighborhood,
+  author={Shakiba, Ali and Hooshmandasl, Mohammad Reza},
+  title={Neighborhood system S-approximation spaces and applications},
+  journal={Knowledge and Information Systems},
+  year={2016},
+  volume={49},
+  number={2},
+  pages={749--794}
+}
+</pre>
+            </div>
+          </li>
+
+          <li id="heydari2016legendre" class="bibentry article">
+            <h4 class="title">Legendre wavelets galerkin method for solving nonlinear stochastic integral equations</h4><br>
+            <span class="author">M. Heydari</span>, <span class="author">M. Hooshmandasl</span>, <span class="author">A. Shakiba</span>, and <span class="author">C. Cattani</span>.<br>
+            <span class="journal">Nonlinear Dynamics</span>, <span class="volume">85</span><span class="number">(2)</span>:<span class="pages">1185&ndash;1202</span>, <span class="date">2016</span>.<br>
+            <button class="bibtex-toggle">BibTeX</button>
+            <div class="bibtex-container">
+              <pre class="bibtex">
+@article{heydari2016legendre,
+  author={Heydari, MH and Hooshmandasl, MR and Shakiba, A and Cattani, C},
+  title={Legendre wavelets Galerkin method for solving nonlinear stochastic integral equations},
+  journal={Nonlinear Dynamics},
+  year={2016},
+  volume={85},
+  number={2},
+  pages={1185--1202}
+}
+</pre>
+            </div>
+          </li>
+
+          <li id="heydari2016efficient" class="bibentry article">
+            <h4 class="title">An efficient computational method based on the hat functions for solving fractional optimal control problems</h4><br>
+            <span class="author">M. Heydari</span>, <span class="author">M. Hooshmandasl</span>, <span class="author">A. Shakiba</span>, and <span class="author">C. Cattani</span>.<br>
+            <span class="journal">Tbilisi Mathematical Journal</span>, <span class="volume">9</span><span class="number">(1)</span>:<span class="pages">143&ndash;157</span>, <span class="date">2016</span>.<br>
+            <button class="bibtex-toggle">BibTeX</button>
+            <div class="bibtex-container">
+              <pre class="bibtex">
+@article{heydari2016efficient,
+  author={Heydari, MH and Hooshmandasl, MR and Shakiba, A and Cattani, C},
+  title={An efficient computational method based on the hat functions for solving fractional optimal control problems},
+  journal={Tbilisi Mathematical Journal},
+  year={2016},
+  volume={9},
+  number={1},
+  pages={143--157}
+}
+</pre>
+            </div>
+          </li>
+
+          <li id="shakiba2016data" class="bibentry article">
+            <h4 class="title">Data volume reduction in covering approximation spaces with respect to twenty-two types of covering based rough sets</h4><br>
+            <span class="author">A. Shakiba</span> and <span class="author">M. R. Hooshmandasl</span>.<br>
+            <span class="journal">International Journal of Approximate Reasoning</span>, <span class="volume">75</span>:<span class="pages">13&ndash;38</span>, <span class="date">2016</span>.<br>
+            <button class="bibtex-toggle">BibTeX</button>
+            <div class="bibtex-container">
+              <pre class="bibtex">
+@article{shakiba2016data,
+  author={Shakiba, Ali and Hooshmandasl, Mohammad Reza},
+  title={Data volume reduction in covering approximation spaces with respect to twenty-two types of covering based rough sets},
+  journal={International Journal of Approximate Reasoning},
+  year={2016},
+  volume={75},
+  pages={13--38}
+}
+</pre>
+            </div>
+          </li>
+
+          <li id="shakiba2016intuitionistic" class="bibentry article">
+            <h4 class="title">An intuitionistic fuzzy approach to s-approximation spaces</h4><br>
+            <span class="author">A. Shakiba</span>, <span class="author">M. R. Hooshmandasl</span>, <span class="author">B. Davvaz</span>, and <span class="author">S. A. S. Fazeli</span>.<br>
+            <span class="journal">Journal of Intelligent & Fuzzy Systems</span>, <span class="volume">30</span><span class="number">(6)</span>:<span class="pages">3385&ndash;3397</span>, <span class="date">2016</span>.<br>
+            <button class="bibtex-toggle">BibTeX</button>
+            <div class="bibtex-container">
+              <pre class="bibtex">
+@article{shakiba2016intuitionistic,
+  author={Shakiba, Ali and Hooshmandasl, Mohammad Reza and Davvaz, Bijan and Fazeli, Seyed Abolfazl Shahzadeh},
+  title={An intuitionistic fuzzy approach to S-approximation spaces},
+  journal={Journal of Intelligent \&amp; Fuzzy Systems},
+  year={2016},
+  volume={30},
+  number={6},
+  pages={3385--3397}
+}
+</pre>
+            </div>
+          </li>
+
+          <li id="shakiba2016cryptanalysis" class="bibentry article">
+            <h4 class="title">Cryptanalysis of multiplicative coupled cryptosystems based on the chebyshev polynomials</h4><br>
+            <span class="author">A. Shakiba</span>, <span class="author">M. R. Hooshmandasl</span>, and <span class="author">M. A. Meybodi</span>.<br>
+            <span class="journal">International Journal of Bifurcation and Chaos</span>, <span class="volume">26</span><span class="number">(07)</span>:<span class="pages">1650112</span>, <span class="date">2016</span>.<br>
+            <button class="bibtex-toggle">BibTeX</button>
+            <div class="bibtex-container">
+              <pre class="bibtex">
+@article{shakiba2016cryptanalysis,
+  author={Shakiba, Ali and Hooshmandasl, Mohammad Reza and Meybodi, Mohsen Alambardar},
+  title={Cryptanalysis of multiplicative coupled cryptosystems based on the chebyshev polynomials},
+  journal={International Journal of Bifurcation and Chaos},
+  year={2016},
+  volume={26},
+  number={07},
+  pages={1650112}
+}
+</pre>
+            </div>
+          </li>
+
+          <li id="rajaati2018efficient" class="bibentry article">
+            <h4 class="title">An efficient algorithm for mixed domination on generalized series-parallel graphs</h4><br>
+            <span class="author">M. Rajaati</span>, <span class="author">A. Shakiba</span>, <span class="author">M. Hooshmandasl</span>, <span class="author">P. Sharifani</span>, and <span class="author">M. J. Dinneen</span>.<br>
+            <span class="journal">Algebraic structures and their applications</span>, <span class="volume">5</span><span class="number">(1)</span>:<span class="pages">23&ndash;39</span>, <span class="date">2018</span>.<br>
+            <button class="bibtex-toggle">BibTeX</button>
+            <div class="bibtex-container">
+              <pre class="bibtex">
+@article{rajaati2018efficient,
+  author={Rajaati, M and Shakiba, Ali and Hooshmandasl, MR and Sharifani, P and Dinneen, Michael J},
+  title={An Efficient Algorithm for Mixed Domination on Generalized Series-Parallel Graphs},
+  journal={Algebraic structures and their applications},
+  year={2018},
+  volume={5},
+  number={1},
+  pages={23--39}
+}
+</pre>
+            </div>
+          </li>
+
+          <li id="hashemipour2017outer" class="bibentry article">
+            <h4 class="title">On outer-connected domination for graph products</h4><br>
+            <span class="author">M. Hashemipour</span>, <span class="author">M. R. Hooshmandasl</span>, and <span class="author">A. Shakiba</span>.<br>
+            <span class="journal">arXiv preprint arXiv:1708.00188</span>, <span class="date">2017</span>.<br>
+            <button class="bibtex-toggle">BibTeX</button>
+            <div class="bibtex-container">
+              <pre class="bibtex">
+@article{hashemipour2017outer,
+  author={Hashemipour, M and Hooshmandasl, Mohammad Reza and Shakiba, Ali},
+  title={On outer-connected domination for graph products},
+  journal={arXiv preprint arXiv:1708.00188},
+  year={2017}
+}
+</pre>
+            </div>
+          </li>
+
+          <li id="hashemipour2019complexity" class="bibentry article">
+            <h4 class="title">On the complexity of the outer-connected bondage and the outer-connected reinforcement problems</h4><br>
+            <span class="author">M. Hashemipour</span>, <span class="author">M. Hooshmandasl</span>, and <span class="author">A. Shakiba</span>.<br>
+            <span class="journal">The Australasian Journal of Combinatorics</span>, <span class="volume">73</span>:<span class="pages">466&ndash;477</span>, <span class="date">2019</span>.<br>
+            <button class="bibtex-toggle">BibTeX</button>
+            <div class="bibtex-container">
+              <pre class="bibtex">
+@article{hashemipour2019complexity,
+  author={Hashemipour, M and Hooshmandasl, MR and Shakiba, Ali},
+  title={On the complexity of the outer-connected bondage and the outer-connected reinforcement problems},
+  journal={The Australasian Journal of Combinatorics},
+  year={2019},
+  volume={73},
+  pages={466--477}
+}
+</pre>
+            </div>
+          </li>
+
+          <li id="heydari2018chebyshev" class="bibentry article">
+            <h4 class="title">Chebyshev cardinal wavelets and their application in solving nonlinear stochastic differential equations with fractional brownian motion</h4><br>
+            <span class="author">M. Heydari</span>, <span class="author">M. Mahmoudi</span>, <span class="author">A. Shakiba</span>, and <span class="author">Z. Avazzadeh</span>.<br>
+            <span class="journal">Communications in Nonlinear Science and Numerical Simulation</span>, <span class="volume">64</span>:<span class="pages">98&ndash;121</span>, <span class="date">2018</span>.<br>
+            <button class="bibtex-toggle">BibTeX</button>
+            <div class="bibtex-container">
+              <pre class="bibtex">
+@article{heydari2018chebyshev,
+  author={Heydari, MH and Mahmoudi, MR and Shakiba, A and Avazzadeh, Z},
+  title={Chebyshev cardinal wavelets and their application in solving nonlinear stochastic differential equations with fractional Brownian motion},
+  journal={Communications in Nonlinear Science and Numerical Simulation},
+  year={2018},
+  volume={64},
+  pages={98--121}
+}
+</pre>
+            </div>
+          </li>
+
+          <li id="meybodi2019domination" class="bibentry article">
+            <h4 class="title">Domination cover number of graphs</h4><br>
+            <span class="author">M. A. Meybodi</span>, <span class="author">M. Hooshmandasl</span>, <span class="author">P. Sharifani</span>, and <span class="author">A. Shakiba</span>.<br>
+            <span class="journal">Discrete Mathematics Algorithms and Applications</span>, <span class="volume">11</span><span class="number">(1)</span>:<span class="pages">1950020</span>, <span class="date">2019</span>.<br>
+            <button class="bibtex-toggle">BibTeX</button>
+            <div class="bibtex-container">
+              <pre class="bibtex">
+@article{meybodi2019domination,
+  author={Meybodi, M Alambardar and Hooshmandasl, MR and Sharifani, P and Shakiba, Ali},
+  title={Domination Cover Number of Graphs},
+  journal={Discrete Mathematics Algorithms and Applications},
+  year={2019},
+  volume={11},
+  number={1},
+  pages={1950020}
+}
+</pre>
+            </div>
+          </li>
+
+          <li id="shakiba2018note" class="bibentry article">
+            <h4 class="title">A note on belief structures and s-approximation spaces</h4><br>
+            <span class="author">A. Shakiba</span>, <span class="author">A. K. Goharshady</span>, <span class="author">M. Hooshmandasl</span>, and <span class="author">M. A. Meybodi</span>.<br>
+            <span class="journal">arXiv preprint arXiv:1805.10672</span>, <span class="date">2018</span>.<br>
+            <button class="bibtex-toggle">BibTeX</button>
+            <div class="bibtex-container">
+              <pre class="bibtex">
+@article{shakiba2018note,
+  author={Shakiba, Ali and Goharshady, Amir Kafshdar and Hooshmandasl, MohammadReza and Meybodi, Mohsen Alambardar},
+  title={A note on belief structures and S-approximation spaces},
+  journal={arXiv preprint arXiv:1805.10672},
+  year={2018}
+}
+</pre>
+            </div>
+          </li>
+
+          <li id="rajaati2018fixed" class="bibentry article">
+            <h4 class="title">On fixed-parameter tractability of the mixed domination problem for graphs with bounded tree-width</h4><br>
+            <span class="author">M. Rajaati</span>, <span class="author">M. Hooshmandasl</span>, <span class="author">M. Dinneen</span>, and <span class="author">A. Shakiba</span>.<br>
+            <span class="journal">Discrete Mathematics & Theoretical Computer Science</span>, <span class="volume">20</span>, <span class="date">2018</span>.<br>
+            <button class="bibtex-toggle">BibTeX</button>
+            <div class="bibtex-container">
+              <pre class="bibtex">
+@article{rajaati2018fixed,
+  author={Rajaati, M and Hooshmandasl, MR and Dinneen, MJ and Shakiba, A},
+  title={On fixed-parameter tractability of the mixed domination problem for graphs with bounded tree-width},
+  journal={Discrete Mathematics \&amp; Theoretical Computer Science},
+  year={2018},
+  volume={20}
+}
+</pre>
+            </div>
+          </li>
+
+          <li id="shakiba2017s" class="bibentry article">
+            <h4 class="title">S-approximation spaces: a fuzzy approach</h4><br>
+            <span class="author">A. Shakiba</span>, <span class="author">M. Hooshmandasl</span>, <span class="author">B. Davvaz</span>, and <span class="author">S. A. Shahzadeh Fazeli</span>.<br>
+            <span class="journal">Iranian Journal of Fuzzy Systems</span>, <span class="volume">14</span><span class="number">(2)</span>:<span class="pages">127&ndash;154</span>, <span class="date">2017</span>.<br>
+            <button class="bibtex-toggle">BibTeX</button>
+            <div class="bibtex-container">
+              <pre class="bibtex">
+@article{shakiba2017s,
+  author={Shakiba, Ali and Hooshmandasl, MohammadReza and Davvaz, Bijan and Shahzadeh Fazeli, Seyed Abolfazl},
+  title={S-approximation spaces: a fuzzy approach},
+  journal={Iranian Journal of Fuzzy Systems},
+  year={2017},
+  volume={14},
+  number={2},
+  pages={127--154}
+}
+</pre>
+            </div>
+          </li>
+
+          <li id="shakiba2019randomized" class="bibentry article">
+            <h4 class="title">A randomized cpa-secure asymmetric-key chaotic color image encryption scheme based on the chebyshev mappings and one-time pad</h4><br>
+            <span class="author">A. Shakiba</span>.<br>
+            <span class="journal">Journal of King Saud University-Computer and Information Sciences</span>, <span class="date">2019</span>.<br>
+            <button class="bibtex-toggle">BibTeX</button>
+            <div class="bibtex-container">
+              <pre class="bibtex">
+@article{shakiba2019randomized,
+  author={Shakiba, Ali},
+  title={A randomized CPA-secure asymmetric-key chaotic color image encryption scheme based on the Chebyshev mappings and one-time pad},
+  journal={Journal of King Saud University-Computer and Information Sciences},
+  year={2019}
+}
+</pre>
+            </div>
+          </li>
+
+          <li id="shakiba2019security" class="bibentry article">
+            <h4 class="title">Security analysis for chaotic maps-based mutual authentication and key agreement using smart cards for wireless networks</h4><br>
+            <span class="author">A. Shakiba</span>.<br>
+            <span class="journal">Journal of Information and Optimization Sciences</span>, <span class="volume">40</span><span class="number">(3)</span>:<span class="pages">725&ndash;750</span>, <span class="date">2019</span>.<br>
+            <button class="bibtex-toggle">BibTeX</button>
+            <div class="bibtex-container">
+              <pre class="bibtex">
+@article{shakiba2019security,
+  author={Shakiba, A},
+  title={Security analysis for chaotic maps-based mutual authentication and key agreement using smart cards for wireless networks},
+  journal={Journal of Information and Optimization Sciences},
+  year={2019},
+  volume={40},
+  number={3},
+  pages={725--750}
+}
+</pre>
+            </div>
+          </li>
+
+          <li id="shakiba2019novel" class="bibentry article">
+            <h4 class="title">A novel randomized one-dimensional chaotic chebyshev mapping for chosen plaintext attack secure image encryption with a novel chaotic breadth first traversal</h4><br>
+            <span class="author">A. Shakiba</span>.<br>
+            <span class="journal">Multimedia Tools and Applications</span>, <span class="pages">pages 1&ndash;27</span>, <span class="date">2019</span>.<br>
+            <button class="bibtex-toggle">BibTeX</button>
+            <div class="bibtex-container">
+              <pre class="bibtex">
+@article{shakiba2019novel,
+  author={Shakiba, Ali},
+  title={A novel randomized one-dimensional chaotic Chebyshev mapping for chosen plaintext attack secure image encryption with a novel chaotic breadth first traversal},
+  journal={Multimedia Tools and Applications},
+  year={2019},
+  pages={1--27}
+}
+</pre>
+            </div>
+          </li>
+
+        </ol>
+		</li> 
+		</ul>
+      </div>
+
+      <div id="conference" class="section">
+        <h3 class="section-title"><span>Conference papers</span></h3>
+		   
+		<ul class="list-group">
+				<li class="list-group-item">
+        <ol class="section-list" start="20">
+          <li id="shakiba2012generalized" class="bibentry inproceedings">
+            <h4 class="title">Generalized quantum turing machines and satisfiability problem</h4><br>
+            <span class="author">A. Shakiba</span> and <span class="author">M. Hooshmandasl</span>.<br>
+            In <span class="booktitle">2nd National Conference on Software Engineering</span>, <span class="date">2012</span>.<br>
+            <button class="bibtex-toggle">BibTeX</button>
+            <div class="bibtex-container">
+              <pre class="bibtex">
+@inproceedings{shakiba2012generalized,
+  author={Shakiba, A. and Hooshmandasl, M.R.},
+  title={Generalized Quantum Turing Machines and Satisfiability Problem},
+  booktitle={2nd National Conference on Software Engineering},
+  year={2012}
+}
+</pre>
+            </div>
+          </li>
+
+          <li id="shakiba2012multiplicative" class="bibentry inproceedings">
+            <h4 class="title">Multiplicative coupled public key schemes</h4><br>
+            <span class="author">A. Shakiba</span>, <span class="author">M. Hooshmandasl</span>, and <span class="author">M. A. Meybodi</span>.<br>
+            In <span class="booktitle">9th ISC’s International Conference on Information Security and Cryptography</span>, <span class="date">2012</span>.<br>
+            <button class="bibtex-toggle">BibTeX</button>
+            <div class="bibtex-container">
+              <pre class="bibtex">
+@inproceedings{shakiba2012multiplicative,
+  author={Shakiba, A. and Hooshmandasl, M.R. and Meybodi, M. Alambardar},
+  title={Multiplicative Coupled Public Key Schemes},
+  booktitle={9th ISC’s International Conference on Information Security and Cryptography},
+  year={2012}
+}
+</pre>
+            </div>
+          </li>
+
+          <li id="meybodi2012public" class="bibentry inproceedings">
+            <h4 class="title">A public key cryptographic scheme by invertible mappings</h4><br>
+            <span class="author">M. A. Meybodi</span>, <span class="author">M. Hooshmandasl</span>, and <span class="author">A. Shakiba</span>.<br>
+            In <span class="booktitle">9th ISC’s International Conference on Information Security and Cryptography</span>, <span class="date">2012</span>.<br>
+            <button class="bibtex-toggle">BibTeX</button>
+            <div class="bibtex-container">
+              <pre class="bibtex">
+@inproceedings{meybodi2012public,
+  author={Meybodi, M. Alambardar and Hooshmandasl, M.R. and Shakiba, A.},
+  title={A Public Key Cryptographic Scheme by Invertible Mappings},
+  booktitle={9th ISC’s International Conference on Information Security and Cryptography},
+  year={2012}
+}
+</pre>
+            </div>
+          </li>
+
+          <li id="hooshmandasl2015combinatorial" class="bibentry inproceedings">
+            <h4 class="title">A combinatorial approach to certain topological spaces based on minimum complement s-approximation spaces</h4><br>
+            <span class="author">M. R. Hooshmandasl</span>, <span class="author">M. A. Meybodi</span>, <span class="author">A. K. Goharshady</span>, and <span class="author">A. Shakiba</span>.<br>
+            In <span class="booktitle">8th International Seminar on Geometry and Topology</span>, <span class="date">2015</span>.<br>
+            <button class="bibtex-toggle">BibTeX</button>
+            <div class="bibtex-container">
+              <pre class="bibtex">
+@inproceedings{hooshmandasl2015combinatorial,
+  author={Hooshmandasl, M. R. and Meybodi, M. Alambardar and Goharshady, A. K. and Shakiba, A.},
+  title={A combinatorial approach to certain topological spaces based on minimum complement S-approximation spaces},
+  booktitle={8th International Seminar on Geometry and Topology},
+  year={2015}
+}
+</pre>
+            </div>
+          </li>
+
+          <li id="shakiba2018differentially" class="bibentry inproceedings">
+            <h4 class="title">Differentially private fuzzy c-means clustering algorithms for fuzzy datasets</h4><br>
+            <span class="author">A. Shakiba</span>.<br>
+            In <span class="booktitle">2018 6th Iranian Joint Congress on Fuzzy and Intelligent Systems (CFIS)</span>, <span class="pages">pages 91&ndash;93</span>. <span class="organization">IEEE</span>, <span class="date">2018</span>.<br>
+            <button class="bibtex-toggle">BibTeX</button>
+            <div class="bibtex-container">
+              <pre class="bibtex">
+@inproceedings{shakiba2018differentially,
+  author={Shakiba, Ali},
+  title={Differentially private fuzzy C-means clustering algorithms for fuzzy datasets},
+  booktitle={2018 6th Iranian Joint Congress on Fuzzy and Intelligent Systems (CFIS)},
+  year={2018},
+  organization={IEEE},
+  pages={91--93}
+}
+</pre>
+            </div>
+          </li>
+
+        </ol>
+		</li>
+		</ul>
+      </div>
+
+      <div id="chapters" class="section">
+        <h3 class="section-title"><span>Chapters in Books</span></h3>
+		<ul class="list-group">
+				<li class="list-group-item">
+        <ol class="section-list" start="25">
+          <li id="shakiba2019s" class="bibentry incollection">
+            <h4 class="title">S-approximation spaces</h4><br>
+            <span class="author">A. Shakiba</span>.<br>
+            In <span class="booktitle">Algebraic Methods in General Rough Sets</span>, <span class="pages">pages 697&ndash;725</span>. <span class="publisher">Birkhäuser, Cham</span>, <span class="date">2019</span>.<br>
+            <button class="bibtex-toggle">BibTeX</button>
+            <div class="bibtex-container">
+              <pre class="bibtex">
+@incollection{shakiba2019s,
+  author={Shakiba, Ali},
+  title={S-Approximation Spaces},
+  booktitle={Algebraic Methods in General Rough Sets},
+  year={2019},
+  publisher={Birkh{\"a}user, Cham},
+  pages={697--725}
+}
+</pre>
+            </div>
+          </li>
+
+        </ol>
+		</li>
+		</ul>
+      </div>
+
+    </div>
+	
+	
+	<!-- end of papers -->
+		
+		<div class="row section featured topspace">
+			<h2 class="section-title"><span>Teaching</span></h2>
+            <ul>
+				<li>Computational Data Mining (Graduates) - Fall 2019, Fall 2018</li>
+				<li>Advanced Algorithms (Graduates) - Fall 2019, Spring 2019</li>
+				<li>Theory of Computer Science (Graduates) - Spring 2019, Fall 2018, Fall 2017, Fall 2016</li>
+				<li>Data Mining (Graduate) - </li>
+				<li>Network Security and Cryptography (Graduate) - </li>
+				<li>Fundamentals of Secure Computing (Undegraduate) - </li>
+				<li>Data Mining (Undegraduate) - E-learning (English and Persian),  </li>
+				<li>Data Structures and Algorithms (Undegraduate) - </li>
+				<li>Fundamentals of Theory of Computation (Undegraduate) - </li>
+				<li>Theory of Computation (Undegraduate) - </li>
+				<li>Programming Fundamentals in Fortran 90 for Physics' Students (Undegraduate) - </li>
+				<li>Introduction to Computing for Management's Students (Undegraduate) - </li>
+				<li></li>
+			</ul>
 		</div> <!-- / section -->
+		
+		<div class="row section featured topspace">
+			<h2 class="section-title"><span>Academic Positions</span></h2>
+            <ul class="list-group">
+					<li class="list-group-item">
+						<h4 class="text-primary">Vice-presidet of Information Technology Department</h4>
+						Vali-e-Asr University of Rafsanjan, Rafsanjan, Iran
+						<br/>
+						Since May, 2018
+						
+						<h4 class="text-primary">Member of the Graduate Studies Committee at the Faculty of Mathematical Sciences</h4>
+						Vali-e-Asr University of Rafsanjan, Rafsanjan, Iran
+						<br/>
+						Since September, 2017
+						
+						<h4 class="text-primary">Member of the International Affairs Committee at the Faculty of Mathematical Sciences</h4>
+						Vali-e-Asr University of Rafsanjan, Rafsanjan, Iran
+						<br/>
+						Since September, 2017
+						
+						<h4 class="text-primary">Director of the High Performance Computing Center</h4>
+						Vali-e-Asr University of Rafsanjan, Rafsanjan, Iran
+						<br/>
+						June, 2017 - May, 2018
+						
+						<h4 class="text-primary">Assistant Professor</h4>
+						Department of Computer Science, Vali-e-Asr University of Rafsanjan, Rafsanjan, Iran
+						<br/>
+						Since October, 2016
+
+						<h4 class="text-primary">Research Assistant</h4>
+						Laboratory of Quantum Information Processing, Yazd University, Yazd, Iran
+						<br/>
+						June, 2012 - October, 2016
+
+						<h4 class="text-primary">Lecturer</h4>
+						Department of Computer Science, Yazd University, Yazd, Iran
+						<br/>
+						October 2015 - February 2016
+						<br/>
+						October 2013 - June 2014
+					</li>
+				</ul>
+		</div> 
+		
 	</div>	<!-- /container -->
 
 </main>
@@ -142,7 +708,7 @@
 			<div class="col-md-3 widget">
 				<h3 class="widget-title">Contact</h3>
 				<div class="widget-body">
-					<p>+98-343-1312271<br>
+					<p>+98-343-1312275<br>
 						<a href="mailto:ali.shakiba@vru.ac.ir">ali.shakiba@vru.ac.ir</a><br>
 						<br>
 						Vali-e-Asr University of Rafsanjan, 22 Bahman Square, Rafsanjan, Iran, 77188-97111
