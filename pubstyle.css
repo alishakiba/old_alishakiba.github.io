@@ -4,22 +4,12 @@
 body {
     font-size: 100%;
     line-height: 125%;
-    font-family: Verdana, Geneva, sans-serif;
     width: 56em;
     margin-left: auto;
     margin-right: auto;
     padding: 0 0.5em;
 }
 
-/* Section headings */
-h2 {
-    font-size: 1.2em;
-}
-
-/* Sub-section headings */
-h3 {
-    font-size: 1em;
-}
 
 /* Separate sections and papers with white space */
 .section {
